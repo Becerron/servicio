@@ -7,16 +7,24 @@
 </head>
 <body id="cuerpo">
     Lector perron de qres
-    <div id="qr-reader" style="width: 600px"></div> 
+    <div class="contenido">
+        <div id="qr-reader"></div> 
+
+    </div>
     <p id="elidmasperrodelmundo"></p>
 
     <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
-    <script>
-
+    <script> 
+    setTimeout(function (){
+        const estilos= document.getElementById('cuerpo');
+        estilos.innerHTML+='<style>body{background-color: antiquewhite; }#qr-reader{width:90%; margin-top:50%;}.contenido{display:flex; aling-items:center; justify-content: center;}</style>';
+        
+    }, 1000);
+    
     function onScanSuccess(decodedText, decodedResult) {
         const parrafo = document.getElementById('elidmasperrodelmundo');
         console.log(`Code scanned = ${decodedText}`, decodedResult);
-        parrafo.innerText=decodedText+decodedResult;
+        parrafo.innerText=decodedText;
 
     }
     var html5QrcodeScanner = new Html5QrcodeScanner(

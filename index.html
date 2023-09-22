@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lector de Qr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenido">
+        <div class="titulo">
+            <img src="Logo-DGETI - CETis96.png" class="logo" alt="">
+            <div class="raya"></div>
+            <p>CENTRO DE COMPUTO</p>
+        </div>
+        <div class="container">
+            <div class="subtitle">
+                <h1>Control de ingresos</h1>
+            </div>
+            <div class="reader">
+                <div id="qr-reader"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script> 
+    
+    function onScanSuccess(decodedText, decodedResult) {
+        const parrafo = document.getElementById('elidmasperrodelmundo');
+        console.log(`Code scanned = ${decodedText}`, decodedResult);
+        parrafo.innerText=decodedText;
+
+    }
+    var html5QrcodeScanner = new Html5QrcodeScanner(
+        "qr-reader", { fps: 10, qrbox: 250 });
+    html5QrcodeScanner.render(onScanSuccess);
+    </script>
+    <script>
+        const botonpermiso = document.getElementById('qr-reader__dashboard_section_csr');
+    </script>
+</body>
+</html>
