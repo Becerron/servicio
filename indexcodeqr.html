@@ -10,16 +10,9 @@
     <div id="qr-reader" style="width: 600px"></div> 
     <p id="elidmasperrodelmundo"></p>
 
-    <style>body{background-color: blue;}</style>
-
-
-
     <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
     <script>
-    setTimeout(function (){
-        const cuerpo = document.getElementById('cuerpo');
-        cuerpo.innerHTML+='<style>body{background-color: red;}</style>';
-    }, 1000)
+
     function onScanSuccess(decodedText, decodedResult) {
         const parrafo = document.getElementById('elidmasperrodelmundo');
         console.log(`Code scanned = ${decodedText}`, decodedResult);
