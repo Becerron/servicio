@@ -81,7 +81,7 @@ body{
     flex-direction: column;
 }
 #qr-reader span{
-    display: none;
+    
 }
 #qr-reader button{
     background-color: #521e20;
