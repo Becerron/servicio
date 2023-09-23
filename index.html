@@ -30,7 +30,7 @@
     function onScanSuccess(decodedText, decodedResult) {
         const parrafo = document.getElementById('elidmasperrodelmundo');
         console.log(`Code scanned = ${decodedText}`, decodedResult);
-        parrafo.innerText=decodedText;
+        alert('Codigo escaneado:'+decodedText);
 
     }
     var html5QrcodeScanner = new Html5QrcodeScanner(

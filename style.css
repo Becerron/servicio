@@ -38,8 +38,8 @@ body{
     font-size: 30px;
 }
 .titulo img{
-    height: 75%;
-    width: 10%;
+    height: 10vh;
+    width: 10vh;
     
 }
 .container{
@@ -63,7 +63,8 @@ body{
 .reader{
     margin-top: 3%;
     width: 90%;
-    height: 90%;
+    height: 100vh;
+    min-height: 600px;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -72,7 +73,7 @@ body{
 #qr-reader{
     border-radius: 15px;
     margin-top: 20%;
-    height: 50%;
+    height: 70%;
     width: 80%;
     background-color:#e6dfd8;
     display: flex;
@@ -89,8 +90,10 @@ body{
     font-size: 15px;
     width: 60%;
     height: 5vh;
+    min-height: 40px;
     border-radius: 12px;
     border: solid ;
+    margin-top: 10vh;
 }
 #qr-reader__dashboard_section_swaplink{
     display: none;
