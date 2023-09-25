@@ -109,6 +109,6 @@ body{
     display: none;
 }
 #qr-shaded-region{
-    border-color: rgba(0, 0, 0, 0);
+    display: none;
 }
 
