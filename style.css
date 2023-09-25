@@ -7,8 +7,6 @@ body{
     align-items: center;
     
     
-
-    
 }
 .contenido{
     display: flex;
@@ -23,6 +21,7 @@ body{
     background-color: #EEECEA;
     height: 65%;
     border-radius: 4px;
+    margin-left: 5vw;
 }
 .titulo{
     margin-top: -1vh;
@@ -38,9 +37,12 @@ body{
     font-size: 30px;
 }
 .titulo img{
-    height: 10vh;
-    width: 10vh;
-    
+    height: 8vh;
+    width: 8vh;
+    margin-left: 3vw;
+}
+.titulo p{
+    margin-left: 10vw;
 }
 .container{
     margin-top: 1vh;
@@ -54,6 +56,7 @@ body{
     color: #80181b;
 }
 .subtitle{
+    margin-right: 1vw;
     width: 90%;
     height: auto;
     display: flex;
@@ -74,12 +77,19 @@ body{
     border-radius: 15px;
     margin-top: 20%;
     height: 70%;
-    width: 80%;
+    width: 95%;
     background-color:#e6dfd8;
     display: flex;
     justify-self: center;
     align-items: center;
     flex-direction: column;
+}
+#qr-reader select{
+    background-color:#e3e3e3;
+    color: #80181b;
+    border-radius: 12px;
+    height: 3.5vh;
+    margin-top: 1vh;
 }
 #qr-reader span{
     
